@@ -1,0 +1,44 @@
+KNAPSACK
+
+Subset sum 
+Equal sum partition
+Count subsets with a given sum 
+Minimum subset sum difference 
+Number of subsets with a given difference 
+Target sum
+
+Unbounded 
+Rod cutting 
+Coin change (max number of ways)
+Coin change (min number of coins)
+Maximum ribbon cut
+
+
+
+LCS
+
+Print LCS
+Longest common substring
+Print Longest common substring
+Shortest common supersequence
+Print SCS
+Min number of insertion and deletion a->b
+Largest repeating subsequence
+Length of largest subsequence of which b is a substring 
+Subsequence pattern matching 
+Count how many times a appear as a subsequence in b 
+Longest palindromic subsequence
+Longest palindromi substring 
+COunt of palindromic substring 
+Minimum number of insertion in a string to make it a palindrome 
+Minimum number of deletion in a string to make it a palindrome 
+
+
+Partition DP
+MCM
+Printing MCM
+Evaluate exp to true boolean Parenthesization 
+min/max value of an exp
+Palindrome partitioning 
+scramble string 
+

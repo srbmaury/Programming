@@ -1,0 +1,53 @@
+vec = {1, 1, 2, 2, 3, 2, 1}
+
+unique(all(v)) makes it equal to {1, 2, 3, 2, 1, ?, ?}
+vec.resize(unique(all(vec)) - vec.begin());
+
+Usually, to make a vector containing only its unique elements, one writes
+sort(all(vec));
+vec.resize(unique(all(vec)) - vec.begin());
+
+
+for(auto7 [x,y] ; pts){
+	cin >> x >> y;
+}
+
+memset 0, -1
+For 1 fill(all(vec), 1);
+
+And if you need to fill it by consecutive numbers
+iota(all(parent), 0); 
+Here 0 denotes the value of *parent.begin(), and each next value is obtained from the previous one by the pre-increment.
+
+rotate(vec.begin(), vec.begin() + k, vec.end());
+can do the trick. This function works in such a way that after rotate(begin, middle, end) the element *middle becomes the first from begin to end.
+
+Create a set from vector 
+set<int> S(all(a));
+
+if (S.find(key) != S.end()) {
+    // ...
+}
+However, set and map have a .count() method which returns 1 iff the key is in the container, otherwise 0:
+
+if (S.count(key)) {
+    // ...
+}
+
+If we talk about binary search: assume you have a vector and a predicate p(x) so that p(x) = true for all elements of some prefix of vector vec and false on all others. To find the first place where p(x) doesn't hold one can simply use
+
+int pos = partition_point(all(vec), p) - vec.begin();
+In other words, partition_point(begin, end, p) returns the first iterator iter that p(*iter) = false, assuming that the condition above holds, that is, p is true on some prefix of [begin, end). 
+
+The easiest bool casting operator is !!
+
+
+Indeed, in the very first version you could actually explicitly specify the output type by a simple arrow:
+
+auto choose2 = [&](int n) -> long long {
+    if (n <= 1) {
+        return 0;
+    } else {
+        return 1ll * n * (n - 1) / 2;
+    }
+};
