@@ -20,16 +20,13 @@ int main (){
     generate(vect.begin(), vect.end(), randomize);
     int n=vect[0];
     cout<<vect[0]<<' ';
-    // if(vect.size()>1) cout<<(vect[1] % n) + 1;    
+    if(vect.size()>1) cout<<(vect[1] % n) + 1;    
     cout<<'\n';
     
     vector<char>v(n);
     generate(v.begin(), v.end(), randomchar);
     for (int i=0; i<v.size(); i++)
-      // cout<<v[i]<<' ';
-    if(v[i]%10<3) cout<<0;
-    else if(v[i]%10>7) cout<<1;
-    else cout<<"?";
+      cout<<v[i];
     cout<<'\n';
   }
   return 0;
