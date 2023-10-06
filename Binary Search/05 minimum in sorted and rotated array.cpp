@@ -3,19 +3,26 @@
 
 
 #include<bits/stdc++.h>
-using ll = long long;
 using namespace std;
 
-ll search(vector<ll>& nums, ll target) {
-    ll n = nums.size();
-    if(n==0) return -1;
-    ll l =0, r = n-1;
-    ll first = nums[0];
-    while(l<=r){
+int findMin(vector<int>& a) {
+    int low=0;
+    int high=a.size()-1;
+    
+    while(low<high)
+    {
+        int mid=low+(high-low)/2;
         
+        if(a[mid]>a[high])
+        {
+            low=mid+1;
+        }
+        else if(a[mid]<a[high])
+        {
+            high=mid;
+        }
     }
-    return -1;
+    return a[low];   //when loop breaks low=high so return either of them
 }
-
 
 main(){}
